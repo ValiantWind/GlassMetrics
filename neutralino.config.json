@@ -1,0 +1,42 @@
+{
+  "applicationId": "js.neutralino.vitetsreact",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "documentRoot": "/vite-src/dist/",
+  "url": "/",
+  "port": 3000,
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "nativeAllowList": [
+    "app.*",
+    "os.*",
+    "computer.*",
+    "window.*",
+    "filesystem.readDirectory"
+  ],
+  "singlePageServe": true,
+  "modes": {
+    "window": {
+      "title": "System Widget",
+      "width": 320,
+      "height": 200,
+      "fullscreen": false,
+      "alwaysOnTop": false,
+      "borderless": true
+    }
+  },
+  "cli": {
+    "binaryName": "system-widget",
+    "resourcesPath": "/vite-src/dist/",
+    "extensionsPath": "/extensions/",
+    "frontendLibrary": {
+      "patchFile": "/vite-src/index.html",
+      "devUrl": "http://localhost:5173",
+      "projectPath": "/vite-src/",
+      "initCommand": "npm install",
+      "devCommand": "npm run dev",
+      "buildCommand": "npm run build"
+    },
+    "binaryVersion": "6.9.0"
+  }
+}
