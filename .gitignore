@@ -1,2 +1,4 @@
 vite-src/node_modules
 vite-src/.env
+vite-src/package-lock.json
+bin/
